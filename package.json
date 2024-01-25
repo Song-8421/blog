@@ -1,0 +1,17 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "用于搭建个人的笔记网站",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "author": "躺平阿福",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.40"
+  }
+}
