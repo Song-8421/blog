@@ -32,3 +32,6 @@ Thumbs.db
 *.swp
 *.swo
 *.tmp
+# 不提交打包文件以及 缓存文件
+docs/.vitepress/dist/*
+docs/.vitepress/cache/*
