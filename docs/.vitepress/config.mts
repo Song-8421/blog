@@ -17,7 +17,12 @@ export default defineConfig({
                     {
                         text: 'ref与reactive',
                         link: '/vue/ref&reactive'
+                    },
+                    {
+                        text: 'component 内置组件',
+                        link: '/vue/component'
                     }
+
                 ]
             },
             {
