@@ -1,4 +1,5 @@
 import {defineConfig} from 'vitepress'
+import mdItCustomAttrs from 'markdown-it-custom-attrs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -103,5 +104,20 @@ export default defineConfig({
                 }, link: 'https://gitee.com/huan-long'
             }
         ]
+    },
+    head: [
+        [
+            "link",
+            {rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"},
+        ],
+        ["script", {src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"}],
+    ],
+    markdown: {
+        config: (md) => {
+            // use more markdown-it plugins!
+            md.use(mdItCustomAttrs, 'image', {
+                'data-fancybox': "gallery"
+            })
+        }
     }
 })
