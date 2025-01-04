@@ -8,8 +8,8 @@ function getTarget() {
 var isProxyAvailable = typeof Proxy === "function";
 
 // node_modules/@vue/devtools-api/lib/esm/const.js
-var HOOK_SETUP = "devtools-plugin:setup";
-var HOOK_PLUGIN_SETTINGS_SET = "plugin:settings:set";
+var HOOK_SETUP = "devtools-dev-plugins:setup";
+var HOOK_PLUGIN_SETTINGS_SET = "dev-plugins:settings:set";
 
 // node_modules/@vue/devtools-api/lib/esm/time.js
 var supported;

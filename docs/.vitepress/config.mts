@@ -11,52 +11,68 @@ export default defineConfig({
             {text: 'Examples', link: '/markdown-examples'}
         ],
 
-        sidebar: [
-            {
-                text: 'Vue',
-                items: [
-                    {
-                        text: 'ref与reactive',
-                        link: '/vue/ref&reactive'
-                    },
-                    {
-                        text: 'component 内置组件',
-                        link: '/vue/component'
-                    }
+        sidebar: {
+            '/web-frame/': [
+                {
+                    text: 'Vue',
+                    collapsed: true,
+                    items: [
+                        {
+                            text: 'ref与reactive',
+                            link: '/web-frame/vue/ref&reactive'
+                        },
+                        {
+                            text: 'component 内置组件',
+                            link: '/web-frame/vue/component'
+                        }
+                    ],
+                },
+                {
+                    text: 'React',
+                    collapsed: true,
+                    items: [
+                        {
+                            text: '简介',
+                            link: '/web-frame/react/index'
+                        },
+                    ],
+                }
+            ],
+            '/dev-plugins/': [
+                {
+                    text: '实用插件',
+                    collapsed: true,
+                    items: [
+                        {
+                            text: 'Echarts',
+                            link: '/dev-plugins/Echarts/on-demand-import'
+                        },
+                        {
+                            text: 'I18n',
+                            link: '/dev-plugins/i18n/i18n'
+                        },
+                    ]
+                }
+            ],
+            '/other/': [
+                {
+                    text: '面试题',
+                    items: [
+                        {
+                            text: 'JavaScript',
+                            items: [
+                                {
+                                    text: '交换两个变量的值',
+                                    link: '/other/js/swap-of-variables'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {text: 'Runtime API Examples', link: '/api-examples'}
+            ]
+        },
 
-                ]
-            },
-            {
-                text: '工作常用',
-                items: [
-                    {
-                        text: 'Echarts',
-                        items: [
-                            {
-                                text: '按需引入',
-                                link: '/work/Echarts/on-demand-import'
-                            },
-                        ]
-                    },
-                    {
-                        text: 'I18n',
-                        items: [
-                            {
-                                text: 'Vite+Vue3使用Vue-i18n',
-                                link: '/work/i18n/i18n'
-                            },
-                        ]
-                    },
-                ]
-            },
-            {
-                text: 'Examples',
-                items: [
-                    {text: 'Markdown Examples', link: '/markdown-examples'},
-                    {text: 'Runtime API Examples', link: '/api-examples'}
-                ]
-            }
-        ],
         docFooter: {
             prev: "上一章",
             next: "下一章",
