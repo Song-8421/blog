@@ -1,8 +1,8 @@
 # 官方定义
 
 首先看一下官方的定义
-![1.png](..%2Fpublic%2Fvue%2Fcomponent%2F1.png)
-![2.png](..%2Fpublic%2Fvue%2Fcomponent%2F2.png)
+![1.png](/vue/component/1.png)
+![2.png](/vue/component/2.png)
 这是一个类似于组件的“元组件”，渲染的内容由is接收到的参数进行决定的。
 
 ## 通过字符串渲染HTML元素
@@ -11,7 +11,7 @@
   <component is="h1">HTML的h1标签和内容</component>
 ```
 
-![3.png](..%2Fpublic%2Fvue%2Fcomponent%2F3.png)
+![3.png](/vue/component/3.png)
 我们可以看到通过传递一个HTML标签名称的字符串给is属性会渲染成传入的HTML标签，内容为component标签包裹的内容。
 
 ## 通过字符串渲染组件
@@ -69,7 +69,7 @@
 ```
 
 这个语法风格为Vue3的setup语法糖，我们可以直接将组件导入并传递给is即可。但是为了避免以下报错
-![4.png](..%2Fpublic%2Fvue%2Fcomponent%2F4.png)
+![4.png](/vue/component/4.png)
 出现这个报错的原因是因为ref或者reactive会将保存的数据进行深层次的响应式，导致保存的组件数据也成为响应式的了，但是这是没有必要且耗费性能的。
 
 所以当使用ref来保存组件的地方推荐使用shallowRef来替代，进行浅层次的响应式。

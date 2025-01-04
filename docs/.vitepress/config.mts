@@ -26,6 +26,29 @@ export default defineConfig({
                 ]
             },
             {
+                text: '工作常用',
+                items: [
+                    {
+                        text: 'Echarts',
+                        items: [
+                            {
+                                text: '按需引入',
+                                link: '/work/Echarts/on-demand-import'
+                            },
+                        ]
+                    },
+                    {
+                        text: 'I18n',
+                        items: [
+                            {
+                                text: 'Vite+Vue3使用Vue-i18n',
+                                link: '/work/i18n/i18n'
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
                 text: 'Examples',
                 items: [
                     {text: 'Markdown Examples', link: '/markdown-examples'},
